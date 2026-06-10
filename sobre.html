@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sobre | Luigi Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  background: #05070a;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  padding: 130px 20px 80px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 54px;
+  color: #22c55e;
+}
+
+.hero p {
+  max-width: 850px;
+  margin: 20px auto;
+  color: #9ca3af;
+  line-height: 1.7;
+}
+
+/* MASCOTE GRANDE */
+.hero img {
+  width: 420px;
+  max-width: 90%;
+  margin-top: 40px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(34,197,94,0.15);
+  transition: 0.4s;
+}
+
+.hero img:hover {
+  transform: scale(1.03);
+}
+
+/* SEÇÕES */
+.section {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  max-width: 850px;
+  margin: auto;
+  color: #9ca3af;
+  line-height: 1.8;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 18px;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #22c55e;
+}
+
+/* PREÇOS */
+.price {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 18px;
+  width: 300px;
+}
+
+.price h3 {
+  color: #22c55e;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.price p {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.price strong {
+  font-size: 22px;
+  color: white;
+}
+
+/* BOTÃO */
+a {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 12px 25px;
+  background: #16a34a;
+  color: black;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+a:hover {
+  transform: scale(1.05);
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Luigi Studio</h1>
+
+  <p>
+    Um estúdio digital focado em criar soluções modernas, interfaces profissionais e experiências digitais que conectam marcas ao mundo tecnológico.
+  </p>
+
+  <!-- MASCOTE MAIOR -->
+  <img src="/images/sobre.jpg" alt="Mascote Luigi Studio">
+</section>
+
+<!-- SOBRE PROFISSIONAL -->
+<section class="section">
+  <h2>Quem Somos</h2>
+
+  <p>
+    A Luigi Studio é um estúdio de tecnologia em crescimento, dedicado ao desenvolvimento de sites, sistemas e soluções digitais modernas.
+    Nosso foco é transformar ideias em produtos digitais funcionais, com design limpo, performance e impacto visual.
+  </p>
+
+  <p style="margin-top:15px;">
+    Trabalhamos com criação de presença digital para empresas, ajudando marcas a se destacarem no ambiente online com soluções inteligentes e criativas.
+  </p>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="section">
+  <h2>O que fazemos</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Sites Profissionais</h3>
+      <p>Design moderno e responsivo com foco em performance e identidade visual.</p>
+    </div>
+
+    <div class="card">
+      <h3>Sistemas Web</h3>
+      <p>Desenvolvimento de plataformas funcionais para empresas e negócios digitais.</p>
+    </div>
+
+    <div class="card">
+      <h3>Conteúdo Digital</h3>
+      <p>Criação de vídeos e mídia com IA para engajamento e presença online.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PREÇOS -->
+<section class="section">
+  <section class="section">
+  <h2>Soluções Digitais</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Sites Básicos</h3>
+      <p>
+        Criação de sites simples, modernos e responsivos para presença digital rápida e profissional.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Sites Avançados</h3>
+      <p>
+        Desenvolvimento de sites completos com design mais sofisticado, múltiplas seções e experiência aprimorada.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Animações com IA</h3>
+      <p>
+        Produção de conteúdos visuais e animações utilizando inteligência artificial para engajamento e marketing digital.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- BOTÃO VOLTAR -->
+<section class="section">
+  <a href="/">Voltar para o site</a>
+</section>
+
+</body>
+</html>

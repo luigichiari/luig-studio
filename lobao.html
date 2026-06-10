@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lobão | Luigi Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  background: #000;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* FUNDO CINEMATOGRÁFICO (MAIS LONGE / WIDE) */
+.bg {
+  position: fixed;
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  left: -5%;
+  object-fit: cover;
+
+  transform: scale(0.88); /* 👈 MAIS LONGE DE VERDADE */
+
+  opacity: 0.30;
+  filter: contrast(1.2) brightness(0.6);
+
+  z-index: 0;
+
+  animation: bgMove 22s ease-in-out infinite;
+}
+
+/* OVERLAY CINEMA */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  background: radial-gradient(
+    circle at center,
+    rgba(0,0,0,0.25),
+    rgba(0,0,0,0.92),
+    rgba(0,0,0,1)
+  );
+
+  z-index: 1;
+}
+
+/* CONTEÚDO */
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  padding: 130px 20px 50px;
+  animation: fadeUp 1.6s ease;
+}
+
+/* 🪶 TÍTULO CINZA METÁLICO */
+.hero h1 {
+  font-size: 72px;
+  letter-spacing: 2px;
+
+  color: #bfc5cc; /* CINZA METÁLICO */
+
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.08),
+    0 0 25px rgba(255,255,255,0.04);
+
+  animation: glowSoft 5s ease-in-out infinite;
+}
+
+.hero p {
+  max-width: 850px;
+  margin: 20px auto;
+  color: #cbd5e1;
+  line-height: 1.9;
+  font-size: 18px;
+}
+
+/* PERSONAGEM (PRESENÇA CINEMATOGRÁFICA) */
+.character {
+  width: 420px;
+  max-width: 92%;
+
+  margin-top: 55px;
+
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,0.12);
+
+  transform: translateY(45px) scale(1.08);
+
+  animation: float 7s ease-in-out infinite, fadeIn 1.8s ease;
+
+  box-shadow: 0 0 80px rgba(34,197,94,0.18);
+
+  position: relative;
+  z-index: 3;
+}
+
+/* STORY */
+.story {
+  max-width: 980px;
+  margin: 90px auto;
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  padding: 50px;
+  border-radius: 22px;
+
+  backdrop-filter: blur(12px);
+
+  animation: fadeUp 2s ease;
+}
+
+.story h2 {
+  color: #bfc5cc; /* cinza metálico também */
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.story p {
+  color: #cbd5e1;
+  line-height: 1.95;
+  margin-bottom: 16px;
+}
+
+/* BOTÃO */
+a {
+  display: inline-block;
+  margin: 60px 0 90px;
+  padding: 14px 30px;
+
+  background: #16a34a;
+  color: black;
+
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+a:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 30px rgba(22,163,74,0.4);
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(45px) scale(1.08); }
+  50% { transform: translateY(25px) scale(1.1); }
+}
+
+@keyframes bgMove {
+  0% { transform: scale(0.88) translate(0px, 0px); }
+  50% { transform: scale(0.92) translate(-12px, -10px); }
+  100% { transform: scale(0.88) translate(0px, 0px); }
+}
+
+/* brilho suave (bem profissional) */
+@keyframes glowSoft {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- FUNDO -->
+<img class="bg" src="/images/lobao-fundo.jpg">
+
+<!-- OVERLAY -->
+<div class="overlay"></div>
+
+<div class="content">
+
+<section class="hero">
+  <h1>Lobão</h1>
+
+  <p>
+    Um símbolo de disciplina, inteligência e evolução dentro da Luigi Studio.
+  </p>
+
+  <img class="character" src="/images/lobao.jpg">
+</section>
+
+<section class="story">
+
+  <h2>A história do Lobão</h2>
+
+  <p>
+    Lobão representa foco, lealdade e evolução constante. Ele acredita que tecnologia não é apenas ferramenta, mas solução real para problemas do mundo moderno.
+  </p>
+
+  <p>
+    No início, não tinha um caminho definido. Explorou diferentes direções até encontrar na tecnologia um propósito claro de criação e crescimento.
+  </p>
+
+  <p>
+    Começou como estudante, aprendendo na prática e evoluindo com cada projeto desenvolvido.
+  </p>
+
+  <p>
+    Com o tempo, percebeu que podia transformar esse aprendizado em algo maior: um estúdio digital focado em inovação e impacto real.
+  </p>
+
+  <p>
+    Hoje, Lobão representa a essência da Luigi Studio — evolução contínua, visão de futuro e construção constante.
+  </p>
+
+</section>
+
+<a href="/">Voltar para o site</a>
+
+</div>
+
+</body>
+</html>

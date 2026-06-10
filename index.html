@@ -98,12 +98,14 @@ header h2 {
   padding: 150px 20px 100px;
 }
 
-.hero h1 {
-  font-size: 60px;
-  font-weight: 700;
-  background: linear-gradient(90deg, #ffffff, #22c55e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 38px;
+    line-height: 1.2;
+    padding: 0 10px;
+  }
+
 }
 
 .hero p {
@@ -208,8 +210,10 @@ header h2 {
 
 .mascote-img {
   width: 320px;
+  max-width: 90%;
+  display: block;
+  margin: 30px auto 0;
   border-radius: 18px;
-  margin-top: 30px;
   cursor: pointer;
   transition: 0.3s;
   border: 1px solid rgba(255,255,255,0.08);
